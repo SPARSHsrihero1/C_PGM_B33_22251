@@ -1,2 +1,2 @@
 # C_PGM_B33_2251
-i am a beginner
+100 days of C programming
