@@ -13,23 +13,23 @@ int main() {
     printf("Prime numbers from 1 to %d are:\n", n);
 
     for (int num = 2; num <= n; num++) {
-        int isPrime = 1;
+        int P = 1;
 
         if (num == 2 || num == 3) {
-            isPrime = 1;
+            P = 1;
         } else if (num % 2 == 0 || num % 3 == 0) {
-            isPrime = 0;
+            P = 0;
         } else {
             int i = 5;
             while (i * i <= num) {
                 if (num % i == 0 || num % (i + 2) == 0) {
-                    isPrime = 0;
+                    P = 0;
                 }
                 i += 6;
             }
         }
 
-        if (isPrime == 1) {
+        if (P == 1) {
             printf("%d ", num);
         }
     }
